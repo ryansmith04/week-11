@@ -30,14 +30,14 @@ def kmeans(X, k):
 
 
 def kmeans_diamonds(n, k):
-    """Run kmeans() with 'k' clusters on the first 'n' rows of the diamonds dataset."""
+    """Run kmeans() with `k` clusters on the first `n` diamonds rows."""
     X = diamonds_numeric.iloc[:n].to_numpy()
     return kmeans(X, k)
 
 
 def kmeans_timer(n, k, n_iter=5):
     """
-    Run kmeans_diamons(n, k) 'n_iter' times.
+    Run kmeans_diamonds(n, k) 'n_iter' times.
 
     Return the average time taken in seconds.
     """
